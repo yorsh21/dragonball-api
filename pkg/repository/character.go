@@ -8,7 +8,6 @@ import (
 	"errors"
 	"fmt"
 	"io"
-	"log"
 	"net/http"
 	"net/url"
 )
@@ -65,7 +64,7 @@ func (r CharacterRepository) GetFromDBByName(name string) (*domain.Character, er
 	seachName := "%" + utils.CapitalizeWords(name) + "%"
 	rows, err := r.DB.Query(q, seachName)
 	if err != nil {
-		log.Fatal(err)
+		return nil, err
 	}
 	defer rows.Close()
 

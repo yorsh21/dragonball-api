@@ -18,3 +18,11 @@ Puede ser utilizada desde Postman importando y ejecutando el siguiente cURL:
 ```
 curl --location --request POST 'http://localhost:8080/character?name=majin'
 ```
+
+
+## test
+
+Teniendo Go 1.23 instalado se puede ejecutar el siguiente comando:
+```
+go test ./..
+```
