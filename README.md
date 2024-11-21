@@ -2,7 +2,7 @@
 
 El proyecto disponibiliza un servicio en Golang con una base de datos SQLite que permite consultar
 nombres de personajes de Dragon Ball, los cuales se van a buscar a: https://web.dragonball-api.com/
-y se guardan localmente en la DB para ser consultados localmente para fururas consultas.
+y se guardan localmente en la DB para ser consultados localmente para futuras consultas.
 
 ## Instalación
 
@@ -10,7 +10,6 @@ El proyecto esta dockerizado por lo que puede ser levantado y disponibilizado ut
 ```
 docker compose up -d 
 ```
-
 
 ## Ejecución
 
